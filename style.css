@@ -1,0 +1,123 @@
+body {
+    width: 500px;
+    background-color: #000033;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    position: absolute;
+}
+
+h1{
+    color:white;
+    text-align: center;
+    font-style: italic;
+    border-bottom: 2px solid red;
+}
+
+h2{
+    text-align: center;
+}
+
+
+p {
+    font-style: italic;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.container span{
+    position: absolute;
+    top: 120px;
+    margin-left: -13px;
+
+}
+
+.container.content {
+    display: none;
+    margin-top: 20px;
+}
+
+.container .content.contentro{
+    display: block;
+}
+
+.container .content.contenten{
+    display: none;
+}
+
+
+input[type=checkbox].switch {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    width: 60px;
+    height: 30.5px;
+    border-radius: 40px;
+    background-color: #ddd;
+    outline: 0;
+    cursor: pointer;
+    transition: background-color 0.8s ease-in-out;
+    position: relative;
+}
+
+input[type=checkbox].switch:before{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 25px;
+}
+
+input[type=checkbox].switch:checked {
+    background-color: #ddd;
+}
+
+input[type=checkbox].switch::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-image: url(romm.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: 50%;
+    border-radius: 50px;
+    position: absolute;
+    transform: scale(0.7);
+    left: 0;
+    transition: left 0.09s ease-in-out;
+    box-shadow: 0 0.1em rgba(0, 0, 0, 0.5);
+}
+
+
+input[type=checkbox].switch:checked::after {
+    left: 29px;
+    background-image: url(king.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+input[type=checkbox].switch:checked ~ .content.contentro{
+    display: none;
+}
+
+input[type=checkbox].switch:checked ~ .content.contenten{
+    display: block;
+}
+
+
+.contentro{
+    color: lightblue;
+}
+
+.contenten {
+    color: lightgreen;
+}
+
+.ro{
+    color: orange;
+}
+
+.en {
+    color: orange;
+}
+
